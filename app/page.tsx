@@ -7,6 +7,7 @@ import { WindowFrames } from "@/components/sections/WindowFrames";
 import { AboutUs } from "@/components/sections/AboutUs";
 import { WhyVetta } from "@/components/sections/WhyVetta";
 import { Footer } from "@/components/layout/Footer";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <AboutUs />
       <WhyVetta />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }
