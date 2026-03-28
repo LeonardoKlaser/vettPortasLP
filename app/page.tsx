@@ -6,6 +6,7 @@ import { Baseboards } from "@/components/sections/Baseboards";
 import { WindowFrames } from "@/components/sections/WindowFrames";
 import { AboutUs } from "@/components/sections/AboutUs";
 import { WhyVetta } from "@/components/sections/WhyVetta";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WindowFrames />
       <AboutUs />
       <WhyVetta />
+      <Footer />
     </main>
   );
 }
