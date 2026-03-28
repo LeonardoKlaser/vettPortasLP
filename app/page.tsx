@@ -5,6 +5,7 @@ import { WoodDoors } from "@/components/sections/WoodDoors";
 import { Baseboards } from "@/components/sections/Baseboards";
 import { WindowFrames } from "@/components/sections/WindowFrames";
 import { AboutUs } from "@/components/sections/AboutUs";
+import { WhyVetta } from "@/components/sections/WhyVetta";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Baseboards />
       <WindowFrames />
       <AboutUs />
+      <WhyVetta />
     </main>
   );
 }
