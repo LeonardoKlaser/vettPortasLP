@@ -11,17 +11,19 @@ import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navbar />
-      <HeroBanner />
-      <ModernDoors />
-      <WoodDoors />
-      <Baseboards />
-      <WindowFrames />
-      <AboutUs />
-      <WhyVetta />
+      <main>
+        <HeroBanner />
+        <ModernDoors />
+        <WoodDoors />
+        <Baseboards />
+        <WindowFrames />
+        <AboutUs />
+        <WhyVetta />
+      </main>
       <Footer />
       <WhatsAppButton />
-    </main>
+    </>
   );
 }

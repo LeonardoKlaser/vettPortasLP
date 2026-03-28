@@ -8,6 +8,7 @@ const NAV_LINKS = [
 const COMPANY_LINKS = [
   { label: "Sobre Nós", href: "#sobre" },
   { label: "Diferenciais", href: "#diferenciais" },
+  { label: "Contato", href: "https://wa.me/PLACEHOLDER" },
 ];
 
 const CONTACT_LINKS = [
