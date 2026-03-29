@@ -16,7 +16,7 @@ const DIFFERENTIALS = [
 
 export function WhyVetta() {
   return (
-    <section id="diferenciais" className="py-16 md:py-24 lg:py-40 bg-navy">
+    <section id="diferenciais" className="py-10 md:py-16 lg:py-20 bg-navy">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
           centered

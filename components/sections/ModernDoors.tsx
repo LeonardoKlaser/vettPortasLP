@@ -20,7 +20,7 @@ const PRODUCTS = [
 
 export function ModernDoors() {
   return (
-    <section id="portas-modernas" className="py-16 md:py-24 lg:py-40">
+    <section id="portas-modernas" className="py-10 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-16 items-start">
           <ScrollReveal withScale>

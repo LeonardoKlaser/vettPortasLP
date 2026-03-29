@@ -19,15 +19,16 @@ const CONTACT_LINKS = [
 
 export function Footer() {
   return (
-    <footer className="bg-dark-brown py-12 md:py-16">
+    <footer className="bg-off-white py-12 md:py-16">
+      <div className="h-px bg-gradient-to-r from-transparent via-navy/10 to-transparent mb-12 md:mb-16" />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <p className="font-heading text-xl tracking-[0.1em] text-off-white mb-3">
+            <p className="font-heading text-xl tracking-[0.1em] text-navy mb-3">
               VETTA PORTAS
             </p>
-            <p className="text-sm text-off-white/50 leading-relaxed max-w-[220px]">
+            <p className="text-sm text-navy/50 leading-relaxed max-w-[220px]">
               Portas, esquadrias e rodapés que transformam ambientes com
               elegância e qualidade.
             </p>
@@ -35,14 +36,14 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="font-heading text-sm text-warm-taupe mb-4">
+            <h4 className="font-heading text-sm text-terracotta mb-4">
               Navegação
             </h4>
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="block text-sm text-off-white/50 hover:text-off-white transition-colors mb-2"
+                className="block text-sm text-navy/50 hover:text-navy transition-colors mb-2"
               >
                 {link.label}
               </a>
@@ -51,14 +52,14 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-heading text-sm text-warm-taupe mb-4">
+            <h4 className="font-heading text-sm text-terracotta mb-4">
               Empresa
             </h4>
             {COMPANY_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="block text-sm text-off-white/50 hover:text-off-white transition-colors mb-2"
+                className="block text-sm text-navy/50 hover:text-navy transition-colors mb-2"
               >
                 {link.label}
               </a>
@@ -67,7 +68,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading text-sm text-warm-taupe mb-4">
+            <h4 className="font-heading text-sm text-terracotta mb-4">
               Contato
             </h4>
             {CONTACT_LINKS.map((link) => (
@@ -80,7 +81,7 @@ export function Footer() {
                     ? "noopener noreferrer"
                     : undefined
                 }
-                className="block text-sm text-off-white/50 hover:text-off-white transition-colors mb-2"
+                className="block text-sm text-navy/50 hover:text-navy transition-colors mb-2"
               >
                 {link.label}
               </a>
@@ -89,8 +90,8 @@ export function Footer() {
         </div>
 
         {/* Divider + Copyright */}
-        <div className="border-t border-off-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
-          <p className="text-xs text-off-white/30">
+        <div className="border-t border-navy/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
+          <p className="text-xs text-navy/30">
             &copy; {new Date().getFullYear()} Vetta Portas. Todos os direitos
             reservados.
           </p>

@@ -13,8 +13,8 @@ const WOOD_TAGS = ["Cumaru", "Ipê", "Cedro", "Mogno"];
 
 export function WoodDoors() {
   return (
-    <section id="portas-madeira" className="py-16 md:py-24 lg:py-40">
-      <div className="h-px bg-gradient-to-r from-transparent via-navy/10 to-transparent mb-16 md:mb-24 lg:mb-40" />
+    <section id="portas-madeira" className="py-10 md:py-16 lg:py-20">
+      <div className="h-px bg-gradient-to-r from-transparent via-navy/10 to-transparent mb-10 md:mb-16 lg:mb-20" />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8 lg:gap-16 items-start">
           <div className="flex flex-col justify-center">
