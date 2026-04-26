@@ -22,7 +22,7 @@ export function ModernDoors() {
   return (
     <section id="portas-modernas" className="py-10 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           <ScrollReveal withScale>
             <div className="overflow-hidden rounded-lg">
               <motion.div
@@ -32,7 +32,7 @@ export function ModernDoors() {
                 <Image
                   src={img1}
                   alt="Porta moderna em ambiente decorado"
-                  className="w-full h-auto object-cover"
+                  className="w-full max-h-[700px] object-cover rounded-lg"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                 />
               </motion.div>
