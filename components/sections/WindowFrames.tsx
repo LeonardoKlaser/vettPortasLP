@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/components/ui/ScrollReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 
 import esq1 from "@/assets/esquadrias/esquadria-1.jpeg";
 import esq2 from "@/assets/esquadrias/esquadria-2.jpeg";
@@ -42,6 +43,8 @@ export function WindowFrames() {
             </motion.div>
           ))}
         </motion.div>
+
+        <WhatsAppCTA product="esquadrias de alumínio" className="mt-12" />
       </div>
     </section>
   );

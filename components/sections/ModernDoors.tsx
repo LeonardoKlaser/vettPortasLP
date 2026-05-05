@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ScrollReveal, staggerContainer, staggerItem } from "@/components/ui/ScrollReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 
 import img1 from "@/assets/modern-doors/porta-moderna-1.jpeg";
 import img2 from "@/assets/modern-doors/porta-moderna-2.jpeg";
@@ -46,7 +47,7 @@ export function ModernDoors() {
               description="Os tipos de porta mais vendidos e para qual uso é recomendado cada uma. Portas que combinam design contemporâneo com funcionalidade para cada ambiente da sua casa."
             />
             <a
-              href="https://wa.me/PLACEHOLDER?text=Olá! Gostaria de saber mais sobre as portas modernas."
+              href="https://wa.me/5548996199526?text=Olá! Gostaria de saber mais sobre as portas modernas."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.15em] font-medium text-terracotta mt-6 hover:opacity-70 transition-opacity"
@@ -84,6 +85,8 @@ export function ModernDoors() {
             </motion.div>
           ))}
         </motion.div>
+
+        <WhatsAppCTA product="portas modernas" className="mt-12" />
       </div>
     </section>
   );

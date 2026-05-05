@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 
 import img1 from "@/assets/wood-doors/porta-madeira-1.jpeg";
 import img2 from "@/assets/wood-doors/porta-madeira-2.jpeg";
@@ -31,7 +32,7 @@ export function WoodDoors() {
               ))}
             </div>
             <a
-              href="https://wa.me/PLACEHOLDER?text=Olá! Gostaria de saber mais sobre as portas em madeira."
+              href="https://wa.me/5548996199526?text=Olá! Gostaria de saber mais sobre as portas em madeira."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.15em] font-medium text-terracotta mt-6 hover:opacity-70 transition-opacity"
@@ -56,6 +57,8 @@ export function WoodDoors() {
             </div>
           </ScrollReveal>
         </div>
+
+        <WhatsAppCTA product="portas em madeira" className="mt-12" />
       </div>
     </section>
   );

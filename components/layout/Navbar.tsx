@@ -46,9 +46,7 @@ export function Navbar() {
         <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className={`font-heading text-lg md:text-xl tracking-[0.15em] font-semibold transition-colors duration-300 ${
-              scrolled ? "text-navy" : "text-off-white"
-            }`}
+            className={`font-heading text-lg md:text-xl tracking-[0.15em] font-semibold transition-colors duration-300 text-navy`}
           >
             VETTA PORTAS
           </a>
@@ -58,9 +56,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`text-xs uppercase tracking-[0.15em] font-medium transition-colors duration-300 hover:opacity-70 ${
-                    scrolled ? "text-navy" : "text-off-white"
-                  }`}
+                  className={`text-xs uppercase tracking-[0.15em] font-medium transition-colors duration-300 hover:opacity-70 text-navy`}
                 >
                   {link.label}
                 </a>
@@ -69,23 +65,17 @@ export function Navbar() {
           </ul>
 
           <a
-            href="https://wa.me/PLACEHOLDER?text=Ola!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos."
+            href="https://wa.me/5548996199526?text=Ola!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos."
             target="_blank"
             rel="noopener noreferrer"
-            className={`hidden md:inline-flex text-xs uppercase tracking-[0.15em] font-medium px-5 py-2 rounded-full border transition-colors duration-300 ${
-              scrolled
-                ? "border-navy/20 text-navy hover:bg-navy hover:text-off-white"
-                : "border-off-white/30 text-off-white hover:bg-off-white/10"
-            }`}
+            className={`hidden md:inline-flex text-xs uppercase tracking-[0.15em] font-medium px-5 py-2 rounded-full border transition-colors duration-300 border-navy/20 text-navy hover:bg-navy hover:text-off-white`}
           >
             WhatsApp
           </a>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`md:hidden p-2 transition-colors ${
-              scrolled ? "text-navy" : "text-off-white"
-            }`}
+            className={`md:hidden p-2 transition-colors text-navy`}
             aria-label="Menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -102,6 +92,13 @@ export function Navbar() {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
             className="fixed inset-y-0 right-0 w-72 bg-navy z-50 px-8 pt-24 flex flex-col gap-6 md:hidden"
           >
+            <button
+              onClick={() => setMobileOpen(false)}
+              className="absolute top-6 right-6 text-off-white/80 hover:text-off-white transition-colors"
+              aria-label="Fechar menu"
+            >
+              <X size={24} />
+            </button>
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
@@ -113,7 +110,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/PLACEHOLDER"
+              href="https://wa.me/5548996199526"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gold text-sm uppercase tracking-[0.15em] font-medium mt-4"

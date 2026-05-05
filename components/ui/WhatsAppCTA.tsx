@@ -2,8 +2,12 @@
 
 import { motion } from "framer-motion";
 
-const WA_URL =
-  "https://wa.me/5548996199526?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos.";
+const WA_NUMBER = "5548996199526";
+
+interface WhatsAppCTAProps {
+  product: string;
+  className?: string;
+}
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -18,22 +22,34 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-export function WhatsAppButton() {
+export function WhatsAppCTA({ product, className = "" }: WhatsAppCTAProps) {
+  const message = encodeURIComponent(
+    `Olá, gostaria de mais informações sobre ${product}`
+  );
+  const url = `https://wa.me/${WA_NUMBER}?text=${message}`;
+
   return (
-    <motion.a
-      href={WA_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Fale conosco pelo WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white rounded-full p-4 shadow-lg group hover:pr-6 transition-all duration-300"
-      animate={{ scale: [1, 1.05, 1] }}
-      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      whileHover={{ scale: 1.1 }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      className={`flex justify-center ${className}`}
     >
-      <WhatsAppIcon className="w-6 h-6" />
-      <span className="max-w-0 overflow-hidden group-hover:max-w-[120px] transition-all duration-300 text-sm font-medium whitespace-nowrap">
-        Fale conosco
-      </span>
-    </motion.a>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1fba59] text-white px-7 py-4 rounded-full shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:shadow-[#25D366]/30 transition-all duration-300 hover:scale-[1.02]"
+      >
+        <WhatsAppIcon className="w-5 h-5" />
+        <span className="text-sm font-medium tracking-wide">
+          Saiba mais sobre {product}
+        </span>
+        <span className="transition-transform duration-300 group-hover:translate-x-1">
+          →
+        </span>
+      </a>
+    </motion.div>
   );
 }

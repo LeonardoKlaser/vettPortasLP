@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ScrollReveal, staggerContainer, staggerItem } from "@/components/ui/ScrollReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 
 import rodape1 from "@/assets/rodapes/rodape-1.jpeg";
 import rodape2 from "@/assets/rodapes/rodape-2.jpeg";
@@ -52,6 +53,8 @@ export function Baseboards() {
             ))}
           </motion.div>
         </div>
+
+        <WhatsAppCTA product="rodapés" className="mt-12" />
       </div>
     </section>
   );
